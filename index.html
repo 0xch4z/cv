@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Preview &#x1F525;</title>
+  <meta charset="utf-8" />
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; }
+    iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+  <iframe id="pdf" src="out/main.pdf"></iframe>
+  <script>
+    // listen for "reload" events and update iframe src
+    const ws = new WebSocket("ws://127.0.0.1:35729", );
+    ws.onopen = () => console.info("socket conn opened");
+    ws.onclose = () => console.info("socket conn closed");
+    ws.onerror = console.error;
+    ws.onmessage = () => {
+      console.info("pdf updated");
+      const now = new Date().getTime();
+      document.getElementById("pdf").src = "out/main.pdf?t=" + now;
+    };
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+%!TEX root = ./main.tex
+%!TEX TS-program = pdflatex
+
+\input{preamble.tex}
+
+\begin{document}
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
+
+% header
+
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Charlie Kenney
+
+	\vspace{5 pt}
+
+	\normalsize
+	\mbox{Washington, D.C.}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{mailto:me@ch4z.io}{me@ch4z.io}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{tel:+19198028647}{+1 (919) 802-8647}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{https://ch4z.io/}{ch4z.io}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{https://github.com/0xch4z}{github.com/0xch4z}}%
+\end{header}
+
+\vspace{5 pt - 0.3 cm}
+
+% body
+
+\section{Experience}
+
+\begin{twocolentry}{
+		Dec 2022 – Present
+	}
+    \textbf{Senior Staff Software Engineer}, Equinix -- New York, NY (\&Remote) \end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+        \item Develop and maintain services to support our VMaaS platform that allows customers to deploy VNFs (Virtual Network Functions) in our edge facilities.
+        \item Served as team lead on the CAS (Cloud Adjacent Storage) product and worked with vendors like Dell PowerStore, Pure Storage, and NetApp to develop APIs that allow us to integrate with and manage customer leased appliances and collect vital telemtry data for seemless customer operations and monitoring.
+		\item Maintained and improved tooling to automate operating system builds for our various skews of baremetal hardware available on Equinix Metal.
+        \item Contribute to our open source Equinix Metal SDKs and Terraform provider.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		July 2022 – Nov 2022
+	}
+	\textbf{Senior Software Engineer}, LifeOmic -- Raleigh, NC\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Designed and implemented a SAML IdP service, allowing our Wellness Platform customers to build integrations with our API.
+		\item Lead development for our Terraform Provider and supporting Go SDK for public facing resources on our API.
+integrations.
+		\item Developed a service to generate white-labeled versions of our Wellness app with automated deployment to our
+customer's Google Play and App Store accounts.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		March 2022 – July 2022
+	}
+    \textbf{Software Engineer}, Linode (acquired by Akamai) -- Philadelphia, PA\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Maintained several large open source projects such as terraform-provider-linode, linodego, linode-cloud-controller-manager, etc., as well as Linode-specific contributions for Ansible, SaltStack, and the Kubernetes Cluster Autoscaler.
+		\item Built a tool to automate and formalize the release upgrade process for customer Kubernetes control planes in LKE, reducing manual effort and increasing rollout confidence.
+        \item Maintained and improved a suite of Kubernetes controllers facilitating managed customer control planes on LKE.
+		\item Participated in a small team on-call rotation monitoring management clusters, Load Balancers, and managed customer Kubernetes Control Planes.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		Jan 2019 – Feb 2020
+	}
+    \textbf{Software Engineer}, LifeOmic -- Raleigh, NC\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+		\item Built services to support business-customer VoIP and video call confrencing, scheduling, metering and billing.
+		\item Contributed to various supporting open source projects, especially in the AWS serverless ecosystem.
+        \item Took ownership in improving company-wide release pipelines for deploying mobile apps and Lambda-based
+services.
+        \item Implemented an external service billing system.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		April 2018 – Jan 2019
+	}
+    \textbf{Junior Optimization Engineer}, Brooks Bell -- Raleigh, NC\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+        \item Implemented front-end and server-side A/B testing for fortune 500 companies such as Gap, Fedex, Suntrust,
+and American Express.
+        \item Developed an internal data ingestion pipeline and visualization dashboard for A/B testing outcomes.
+        \item Engineered internal tools to aid in the development of external A/B tests and improve developer experience
+for the team.
+	\end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{
+		May 2017 – Present
+	}
+    \textbf{Freelance Software Engineering}\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+        \item Built a phone routing system under very low budget constraints using a 100\% serverless AWS architecture for a start up.
+        \item Develop accessible, fullstack web apps to customer spec.
+	\end{highlights}
+\end{onecolentry}
+
+
+% TODO: does anyone even care about edu anymore?
+% \section{Education}
+
+% \begin{twocolentry}{
+% 		Oct 2018 – April 2019
+% 	}
+% 	\textbf{University of North Carolina Chapel Hill}, Certification in Fullstack Web Development\end{twocolentry}
+
+% \vspace{0.10 cm}
+% \begin{onecolentry}
+% 	\begin{highlights}
+% 		\item \textbf{Coursework:} Fullstack web development, DB administration
+% 	\end{highlights}
+% \end{onecolentry}
+
+\section{Technologies}
+
+\begin{onecolentry}
+	\textbf{Languages:} Golang, Rust, Elixir, Swift, Python, TypeScript, Bash, SQL
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{onecolentry}
+	\textbf{Technologies:} Kubernetes, Containers, QEMU, VPP, Nix, Terraform, Ansible, SaltStack, Git
+\end{onecolentry}
+
+% footer
+
+\begin{footer}
+    view source: \hrefWithoutArrow{https://github.com/0xch4z/cv}{github.com/0xch4z/cv}
+\end{footer}
+
+\end{document}
