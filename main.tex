@@ -4,6 +4,7 @@
 \input{preamble.tex}
 
 \begin{document}
+\fontsize{9.75pt}{11.7pt}\selectfont
 \newcommand{\AND}{\unskip
 	\cleaders\copy\ANDbox\hskip\wd\ANDbox
 	\ignorespaces
@@ -19,7 +20,7 @@
 	\vspace{5 pt}
 
 	\normalsize
-	\mbox{Washington, D.C.}%
+	\mbox{New York, NY}%
 	\kern 5.0 pt%
 	\AND%
 	\kern 5.0 pt%
@@ -45,15 +46,31 @@
 \section{Experience}
 
 \begin{twocolentry}{
-		Dec 2022 – Present
+		Jun 2025 – Present
 	}
-    \textbf{Senior Staff Software Engineer}, Equinix -- New York, NY (\&Remote) \end{twocolentry}
+    \textbf{Software Engineering Technical Leader}, Isovalent (at Cisco) -- New York, NY \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
 	\begin{highlights}
-        \item Develop and maintain services to support our VMaaS platform that allows customers to deploy VNFs (Virtual Network Functions) in our edge facilities.
-        \item Served as team lead on the CAS (Cloud Adjacent Storage) product and worked with vendors like Dell PowerStore, Pure Storage, and NetApp to develop APIs that allow us to integrate with and manage customer leased appliances and collect vital telemtry data for seemless customer operations and monitoring.
+        \item Develop and maintain a Kubernetes operator and supporting tooling that automates the provisioning, installation, and lifecycle management of Isovalent Enterprise Platform appliances (such as Isovalent LoadBalancer) in customer cloud environments.
+        \item Developed a continuous benchmarking and profiling pipeline for Isovalent LoadBalancer, generating performance metrics that we use internally to track improvements/regressions and inform customer-facing marketing collateral.
+        \item Work with customers to diagnose and resolve Cilium Enterprise issues in their environments, delivering fixes and patches upstream.
+	\end{highlights}
+\end{onecolentry}
+
+\vspace{0.2 cm}
+
+\begin{twocolentry}{
+		Dec 2022 – Jun 2025
+	}
+    \textbf{Senior Staff Software Engineer}, Equinix -- New York, NY \end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+	\begin{highlights}
+        \item Developed and maintained services powering a VMaaS platform for deploying VNFs in edge facilities.
+        \item Led the CAS (Cloud Adjacent Storage) product, integrating with vendors like Dell PowerStore, Pure Storage, and NetApp to manage customer appliances and collect telemetry data.
 		\item Maintained and improved tooling to automate operating system builds for our various skews of baremetal hardware available on Equinix Metal.
         \item Contribute to our open source Equinix Metal SDKs and Terraform provider.
 	\end{highlights}
@@ -72,8 +89,7 @@
 		\item Designed and implemented a SAML IdP service, allowing our Wellness Platform customers to build integrations with our API.
 		\item Lead development for our Terraform Provider and supporting Go SDK for public facing resources on our API.
 integrations.
-		\item Developed a service to generate white-labeled versions of our Wellness app with automated deployment to our
-customer's Google Play and App Store accounts.
+		\item Developed a service to generate and deploy white-labeled versions of our Wellness app to customer app store accounts.
 	\end{highlights}
 \end{onecolentry}
 
@@ -87,8 +103,8 @@ customer's Google Play and App Store accounts.
 \vspace{0.10 cm}
 \begin{onecolentry}
 	\begin{highlights}
-		\item Maintained several large open source projects such as terraform-provider-linode, linodego, linode-cloud-controller-manager, etc., as well as Linode-specific contributions for Ansible, SaltStack, and the Kubernetes Cluster Autoscaler.
-		\item Built a tool to automate and formalize the release upgrade process for customer Kubernetes control planes in LKE, reducing manual effort and increasing rollout confidence.
+		\item Maintained large open source projects including terraform-provider-linode, linodego, and linode-cloud-controller-manager, with contributions to Ansible, SaltStack, and the Kubernetes Cluster Autoscaler.
+		\item Built tooling to automate Kubernetes control plane upgrades in LKE, reducing manual effort and increasing rollout confidence.
         \item Maintained and improved a suite of Kubernetes controllers facilitating managed customer control planes on LKE.
 		\item Participated in a small team on-call rotation monitoring management clusters, Load Balancers, and managed customer Kubernetes Control Planes.
 	\end{highlights}
@@ -130,19 +146,20 @@ for the team.
 	\end{highlights}
 \end{onecolentry}
 
-\begin{twocolentry}{
-		May 2017 – Present
-	}
-    \textbf{Freelance Software Engineering}\end{twocolentry}
-
-\vspace{0.10 cm}
-\begin{onecolentry}
-	\begin{highlights}
-        \item Built a phone routing system under very low budget constraints using a 100\% serverless AWS architecture for a start up.
-        \item Develop accessible, fullstack web apps to customer spec.
-	\end{highlights}
-\end{onecolentry}
-
+% TODO: no space for freelance
+% \begin{twocolentry}{
+% 		May 2017 – Present
+% 	}
+%     \textbf{Freelance Software Engineering}\end{twocolentry}
+%
+% \vspace{0.10 cm}
+% \begin{onecolentry}
+% 	\begin{highlights}
+%         \item Built a phone routing system under very low budget constraints using a 100\% serverless AWS architecture for a start up.
+%         \item Develop accessible, fullstack web apps to customer spec.
+% 	\end{highlights}
+% \end{onecolentry}
+%
 
 % TODO: does anyone even care about edu anymore?
 % \section{Education}
